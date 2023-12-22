@@ -1,5 +1,5 @@
 {
-  "name": "envoy-partner-node-sdk",
+  "name": "@envoy/node-sdk",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Envoy-Technology/envoy-partner-node-sdk.git"
+    "url": "git+https://github.com/Envoy-Technology/node-sdk.git"
   },
   "keywords": [],
   "author": "Envoy Technology",
-  "license": "ISC",
+  "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/Envoy-Technology/envoy-partner-node-sdk/issues"
+    "url": "https://github.com/Envoy-Technology/node-sdk/issues"
   },
-  "homepage": "https://github.com/Envoy-Technology/envoy-partner-node-sdk#readme",
+  "homepage": "https://github.com/Envoy-Technology/node-sdk#readme",
   "devDependencies": {
     "typescript": "^5.3.2"
   }
