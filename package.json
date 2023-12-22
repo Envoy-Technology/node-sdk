@@ -1,0 +1,24 @@
+{
+  "name": "envoy-partner-node-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Envoy-Technology/envoy-partner-node-sdk.git"
+  },
+  "keywords": [],
+  "author": "Envoy Technology",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Envoy-Technology/envoy-partner-node-sdk/issues"
+  },
+  "homepage": "https://github.com/Envoy-Technology/envoy-partner-node-sdk#readme",
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
+}
