@@ -9,7 +9,6 @@
 | lifespanAfterClick | [`LifespanAfterClick`](/doc/models/LifespanAfterClick.md) | No | Time metric that measures how long share link will be active after first click  |
 | openQuota | `Number` | No | How many times share link may be opened |
 | extra | `Object<[key: string]: string>` | No | Use this field to pass additional info about your users or the context, like in example payload. You'll then have those breakdowns available in your analytics section |
-| title | `string` | No | Title of the shared link |
 | sharerId | `string` | Yes | Internal Id of the user that is sharing the link |
 | isSandbox | `Boolean` | No | Determine if the shared link is a sandbox one |
 | labels | Array<[`Label`](/doc/models/Label.md)> | No | Labels to be displayed on gift landing |
@@ -59,7 +58,6 @@
   },
   "openQuota": 10,
   "extra": "extra",
-  "title": "Title",
   "sharerId": 12345,
   "isSandbox": false,
   "labels": [

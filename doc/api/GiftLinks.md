@@ -61,7 +61,6 @@ const giftLink = {
   },
   "openQuota": 10,
   "extra": "extra",
-  "title": "Title",
   "sharerId": 12345,
   "isSandbox": false,
   "labels": [
