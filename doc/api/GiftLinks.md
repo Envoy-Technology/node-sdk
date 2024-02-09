@@ -16,20 +16,6 @@ async createGiftLink(giftLink)
 |-----------|------|----------|------------|
 | giftLink | [`GiftLink`](/doc/models/GiftLink.md) | Yes | Object containing the fields required for the POST request |
 
-
-### Create Sandbox Gift Link
-
-```js
-async createSandboxGiftLink(giftLink)
-```
-
-#### Parameters
-
-| Parameter | Type | Required | Description|
-|-----------|------|----------|------------|
-| giftLink | [`GiftLink`](/doc/models/GiftLink.md) | Yes | Object containing the fields required for the POST request |
-
-
 #### Example Usage
 
 ```js
@@ -52,7 +38,6 @@ const giftLink = {
       "previewTitle": "Gift link preview title",
       "previewDescription": "Gift link preview description",
       "previewImage": "example.com/image_url",
-      "isSandbox": false,
       "mandatoryEmail": true,
       "modalTitle": "Enter email",
       "buttonText": "Enter your email to unlock the gift content",
@@ -94,5 +79,4 @@ const giftLink = {
 };
 
 await envoyClient.giftLinks.createGiftLink(giftLink);
-await envoyClient.giftLinks.createSandboxGiftLink(giftLink);
 ```

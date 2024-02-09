@@ -36,7 +36,6 @@
       "previewTitle": "Gift link preview title",
       "previewDescription": "Gift link preview description",
       "previewImage": "example.com/image_url",
-      "isSandbox": false,
       "mandatoryEmail": true,
       "modalTitle": "Enter email",
       "buttonText": "Enter your email to unlock the gift content",

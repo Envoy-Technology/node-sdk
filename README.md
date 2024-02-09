@@ -43,10 +43,10 @@ After initializing the client instance you can then call the methods available i
 
 | API | SDK accessor | Available methods |
 |-----|----------------|-------------------|
-| Gift Links | `giftLinks` | `createGiftLink(giftLinkParams)` `createSandboxGiftLink(giftLinkParams)` |
+| Gift Links | `giftLinks` | `createGiftLink(giftLinkParams)` |
 | User Quota | `userQuota` | `getUserQuota(userId)` |
 | Tracking | `tracking` | `createPixelEvent(pixelEvent)` |
-| Rewards | `rewards` | `createGiftLink(giftLinkParams)` `createSandboxGiftLink(giftLinkParams)` |
+| Rewards | `rewards` | `getUserRewards(userId)` `getCurrentUserRewards(userId)` `claimUserReward(userParams)` |
 
 ## API-specific documentations
 
