@@ -16,7 +16,6 @@
 | previewTitle | `string` | No | Will be used as webpage title on gift landing. It will also appear as title on any link preview like facebook, messenger, slack etc |
 | previewDescription | `string` | No | Will be used as webpage description on gift landing. It will also appear as description on any link preview like facebook, messenger, slack etc |
 | previewImage | `string` | No | Will be userd as og:image in website metadata. It will appear as image on any link preview like facebook, messenger, slack etc. To work correctly image should be smaller than 300KB |
-| isSandbox | `Boolean` | No | Determine if the shared link is a sandbox one |
 | mandatoryEmail | `Boolean` | No | Restrict access to the shared content until the user has provided an email address |
 | modalTitle | `string` | No | Title displayed on the modal that requests user email |
 | buttonText | `string` | No | Text displayedon the button on the bottom of the modal that requests user email |
@@ -42,14 +41,23 @@
   "previewTitle": "Gift link preview title",
   "previewDescription": "Gift link preview description",
   "previewImage": "example.com/image_url",
-  "isSandbox": false,
   "mandatoryEmail": true,
   "modalTitle": "Enter email",
   "buttonText": "Enter your email to unlock the gift content",
   "contentProtection": {
-    "source": "example.com/media_url",
-    "sourceisRedirect": false,
-    "poster": "example.com/image_url"
+    "media": {
+      "source": "example.com/media_url",
+      "sourceisRedirect": false,
+      "poster": "example.com/image_url"
+    },
+    "drmHeaders": {
+      "header": "example"
+    },
+    "drmPlayer": {
+      "serverName": "server name",
+      "serverCertificate": "server certificate"
+    },
+    "player": "widevine"
   },
 }
 ```

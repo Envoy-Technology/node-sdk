@@ -13,17 +13,6 @@ export class GiftLinksApi extends BaseAPI {
     return response;
   }
 
-  async createSandboxGiftLink(giftLinkParams: GiftLinksParams) {
-    this.#checkRequiredGiftLinkParams(giftLinkParams);
-
-    const response = await this.request({
-      path: "/create-sandbox-link",
-      method: "POST",
-      body: CreateGiftLinkToJSON(giftLinkParams),
-    });
-    return response;
-  }
-
   #checkRequiredGiftLinkParams(giftLinkParams: GiftLinksParams) {
     if (!giftLinkParams) throw new RequiredError("giftLinkParams");
     if (!giftLinkParams.contentSetting) throw new RequiredError("giftLinkParams.contentSetting");
