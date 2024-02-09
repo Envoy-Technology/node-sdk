@@ -44,8 +44,12 @@
           "sourceisRedirect": false,
           "poster": "example.com/image_url"
         },
-        "drm_headers": {
+        "drmHeaders": {
           "header": "example"
+        },
+        "drmPlayer": {
+          "serverName": "server name",
+          "serverCertificate": "server certificate"
         },
         "player": "widevine"
       }

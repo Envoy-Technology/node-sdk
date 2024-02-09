@@ -1,4 +1,6 @@
-type ContentMediaSetting = {
+import { ContentProtectionSetting, CreateContentProtectionSettingToJSON } from "./CreateContentProtectionSetting"
+
+export type ContentMediaSetting = {
   source: string,
   sourceIsRedirect?: Boolean,
   poster?: string,
@@ -20,7 +22,7 @@ export type ContentSetting = {
   mandatoryEmail?: Boolean,
   modalTitle?: string,
   buttonText?: string,
-  contentProtection?: ContentMediaSetting,
+  contentProtection?: ContentProtectionSetting,
 }
 
 export function CreateContentSettingToJSON(value: ContentSetting) {
@@ -42,6 +44,6 @@ export function CreateContentSettingToJSON(value: ContentSetting) {
     'mandatory_email': value.mandatoryEmail,
     'modal_title': value.modalTitle,
     'button_text': value.buttonText,
-    'content_protection': value.contentProtection,
+    'content_protection': CreateContentProtectionSettingToJSON(value.contentProtection),
   }
 }

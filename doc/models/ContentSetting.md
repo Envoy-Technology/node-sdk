@@ -45,9 +45,19 @@
   "modalTitle": "Enter email",
   "buttonText": "Enter your email to unlock the gift content",
   "contentProtection": {
-    "source": "example.com/media_url",
-    "sourceisRedirect": false,
-    "poster": "example.com/image_url"
+    "media": {
+      "source": "example.com/media_url",
+      "sourceisRedirect": false,
+      "poster": "example.com/image_url"
+    },
+    "drmHeaders": {
+      "header": "example"
+    },
+    "drmPlayer": {
+      "serverName": "server name",
+      "serverCertificate": "server certificate"
+    },
+    "player": "widevine"
   },
 }
 ```
